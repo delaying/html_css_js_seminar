@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: papayawhip;
+      }
+      h3 {
+        color: blue;
+      }
+      div {
+        font-size: 15px;
+      }
+      .accent {
+        color: red;
+      }
+      img {
+        width: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="list">웹 프로그래밍</h2>
+    <ol>
+      <a href="#first-page"><li>HTML</li></a>
+      <a href="#second-page"><li>CSS</li></a>
+      <a href="#third-page"><li>JavaScript</li></a>
+    </ol>
+    <a href="./main.html">홈으로 돌아가기</a>
+    <hr />
+    <div id="first-page">
+      <h3>HTML</h3>
+      <div class="accent">HTML(Hyper Text Markup Language)</div>
+      은 가장 단순한 형태의 웹 언어이다.<br />
+      웹서버에 HTML 문서를 저장하고 있다가 클라이언트가 <br />특정 HTML 페이지를
+      요청하면 해당 HTML 문서를 클라이언트로 전송한다.<br />
+      그러면 클라이언트는 이 웹 페이지를 해석하여 웹 브라우저에 표현해 주는데
+      이런 웹 페이지를 정적인(Static) 웹 페이지라고 한다.<br />
+      초기의 웹 서비스는 정적인 웹 페이지가 대부분이었다.<br />
+      대학에서 교양 과목으로 처음 홈페이지를 만들어볼 때도 대부분 이런 정적인 웹
+      페이지를 만든다. <br />정적인 웹 페이지는 고객의 취향이나 변화에 적응할 수
+      없고 새로운 것을 추가하는 데 <br />많은 시간이 걸린다는 단점이 있지만
+      보안에는 장점이 많다. <br />웹 해킹은 웹 브라우저와 웹 서버 사이에
+      전달되는 값들의 <br />변조를 통해 웹 서버의 설정이나 로직을 바꾸는데,
+      <br />정적인 웹 페이지는 '바꿀 수 있는 가능성'이 매우 낮기 때문이다.<br />
+      [네이버 지식백과] HTML (정보 보안 개론, 2013. 6. 28., 양대일) <br /><br />
+    </div>
+    <div id="second-page">
+      <h3>CSS</h3>
+
+      <div class="accent">[ cascading style sheets ]</div>
+      <br />요약 웹 문서의 전반적인 스타일을 미리 저장해 둔 스타일시트이다.
+      <br />문서 전체의 일관성을 유지할 수 있고, 세세한 스타일 지정의 필요를
+      줄어들게 하였다. <br />기존의 HTML은 웹 문서를 다양하게 설계하고 수시로
+      변경하는데 많은 제약이 따르는데, <br />이를 보완하기 위해 만들어진 것이
+      스타일 시트이고 스타일 시트의 표준안이 바로 CSS이다.<br />
+      간단히 스타일 시트라고도 한다. <br />HTML을 이용해서 웹 페이지를 제작할
+      경우 전반적인 틀에서 세세한 글꼴 하나 하나를 일일이 지정해주어야
+      하지만,<br />
+      웹 페이지의 스타일(작성형식)을 미리 저장해 두면 <br />웹 페이지의 한 가지
+      요소만 변경해도 관련되는 전체 페이지의 내용이 한꺼번에 변경되므로,
+      <br />문서 전체의 일관성을 유지할 수 있고 작업 시간도 단축된다.<br />따라서
+      웹 개발자들은 보다 풍부한 디자인으로 웹을 설계할 수 있고, <br />글자의
+      크기, 글자체, 줄간격, 배경 색상, 배열위치 등을 자유롭게 선택하거나 변경할
+      수 있으며 유지·보수도 간편하게 할 수 있다.<br />
+      [네이버 지식백과] CSS [cascading style sheets] (두산백과 두피디아,
+      두산백과) <br /><br />
+    </div>
+    <div id="third-page">
+      <h3>JavaScript</h3>
+
+      <div class="accent">[ Javascript ]</div>
+      <br />
+
+      우리가 매일 접속하는 웹사이트는 크게 3가지 요소로 구성된다.<br />
+      ‘HTML(Hyper Text Markup Language)’, ‘CSS(Cascading Style Sheets)’,<br />
+      ‘자바스크립트(Javascript)’다. HTML은 웹페이지의 큰 뼈대를 제공하고,<br />
+      CSS는 색깔이나 글씨체와 같은 디자인 요소를 관리한다.<br />
+      자바스크립트는 크로스 플랫폼(cross platform), 객체지향 스크립트 언어로
+      웹페이지의 동작을 담당한다.<br />
+      예를 들어 자바스크립트를 이용하면 ‘버튼을 클릭하면 밑에 날짜를 보여줘’라는
+      식의 명령을 내릴 수 있다. <br />자바스크립트를 이용하면 웹에 풍부한 효과를
+      넣을 수 있지만, <br />2000년대 초반만 해도 자바스크립트는 개발자들에게
+      무시당하는 언어였다. 별다른 기능도 없고,<br />
+      성능도 별로 좋지 않았기 때문이다.<br />
+      하지만 최근 몇 년 사이에 다양한 자바스크립트 프레임워크와 라이브러리가<br />
+      생기면서 자바스크립트 생태계는 크게 확장되고 있으며, 그 위상도 점점
+      높아지고 있다. <br />[네이버 지식백과] 자바스크립트 [Javascript] - 웹을
+      풍부하게 만들어주는 작고 가벼운 언어 <br />(용어로 보는 IT, 이지현)
+      <br /><br />
+    </div>
+    <div id="last">
+      <a href="#list"
+        ><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShJe2qObULbSV6i4Lt84NydqV-rWmzX_n-AQ&usqp=CAU"
+          alt=""
+      /></a>
+      <a href="#list">맨 위로</a>
+    </div>
+  </body>
+</html>

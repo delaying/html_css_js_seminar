@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Document</title>
+    <style>
+      * {
+        background-color: aliceblue;
+      }
+      div {
+        font-size: 15px;
+      }
+      h3 {
+        color: blue;
+      }
+      li {
+        color: red;
+      }
+      .accent {
+        color: red;
+      }
+      #list {
+        color: purple;
+      }
+      .green {
+        color: green;
+      }
+      .css .accent {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="list">웹 프로그래밍</h2>
+    <ol>
+      <a href="#first-page"><li>HTML</li></a>
+      <a href="#second-page"><li>CSS</li></a>
+      <a href="#third-page"><li>JavaScript</li></a>
+    </ol>
+    <a href="./index.html">홈으로 돌아가기</a>
+    <hr />
+    <div id="first-page">
+      <h3>HTML</h3>
+      <div class="accent">HTML(Hyper Text Markup Language)</div>
+      은 가장 단순한 형태의 웹 언어이다.<br />
+      웹서버에 HTML 문서를 저장하고 있다가 클라이언트가 <br />특정 HTML 페이지를
+      요청하면 해당 HTML 문서를 클라이언트로 전송한다.<br />
+      그러면 클라이언트는 이 웹 페이지를 해석하여 웹 브라우저에 표현해 주는데
+      이런 웹 페이지를 정적인(Static) 웹 페이지라고 한다.<br />
+      초기의 웹 서비스는 정적인 웹 페이지가 대부분이었다.<br />
+      대학에서 교양 과목으로 처음 홈페이지를 만들어볼 때도 대부분 이런 정적인 웹
+      페이지를 만든다. <br />정적인 웹 페이지는 고객의 취향이나 변화에 적응할 수
+      없고 새로운 것을 추가하는 데 <br />많은 시간이 걸린다는 단점이 있지만
+      보안에는 장점이 많다. <br />웹 해킹은 웹 브라우저와 웹 서버 사이에
+      전달되는 값들의 <br />변조를 통해 웹 서버의 설정이나 로직을 바꾸는데,
+      <br />정적인 웹 페이지는 '바꿀 수 있는 가능성'이 매우 낮기 때문이다.<br />
+      [네이버 지식백과] HTML (정보 보안 개론, 2013. 6. 28., 양대일) <br /><br />
+    </div>
+    <div id="second-page" class="css">
+      <h3>CSS</h3>
+      <div class="accent">[ cascading style sheets ]</div>
+      <br />요약 웹 문서의 전반적인 스타일을 미리 저장해 둔 스타일시트이다.
+      <br />문서 전체의 일관성을 유지할 수 있고, 세세한 스타일 지정의 필요를
+      줄어들게 하였다. <br />기존의 HTML은 웹 문서를 다양하게 설계하고 수시로
+      변경하는데 많은 제약이 따르는데, <br />이를 보완하기 위해 만들어진 것이
+      스타일 시트이고 스타일 시트의 표준안이 바로 CSS이다.<br />
+      간단히 스타일 시트라고도 한다. <br />HTML을 이용해서 웹 페이지를 제작할
+      경우 전반적인 틀에서 세세한 글꼴 하나 하나를 일일이 지정해주어야
+      하지만,<br />
+      웹 페이지의 스타일(작성형식)을 미리 저장해 두면 <br />웹 페이지의 한 가지
+      요소만 변경해도 관련되는 전체 페이지의 내용이 한꺼번에 변경되므로,
+      <br />문서 전체의 일관성을 유지할 수 있고 작업 시간도 단축된다.<br />따라서
+      웹 개발자들은 보다 풍부한 디자인으로 웹을 설계할 수 있고, <br />글자의
+      크기, 글자체, 줄간격, 배경 색상, 배열위치 등을 자유롭게 선택하거나 변경할
+      수 있으며 유지·보수도 간편하게 할 수 있다.<br />
+      [네이버 지식백과] CSS [cascading style sheets] (두산백과 두피디아,
+      두산백과) <br /><br />
+    </div>
+    <div id="third-page">
+      <h3>JavaScript</h3>
+      <div class="accent">[ Javascript ]</div>
+      <br />
+      우리가 매일 접속하는 웹사이트는 크게 3가지 요소로 구성된다.<br />
+      ‘HTML(Hyper Text Markup Language)’, ‘CSS(Cascading Style Sheets)’,<br />
+      ‘자바스크립트(Javascript)’다. HTML은 웹페이지의 큰 뼈대를 제공하고,<br />
+      CSS는 색깔이나 글씨체와 같은 디자인 요소를 관리한다.<br />
+      자바스크립트는 크로스 플랫폼(cross platform), 객체지향 스크립트 언어로
+      웹페이지의 동작을 담당한다.<br />
+      예를 들어 자바스크립트를 이용하면 ‘버튼을 클릭하면 밑에 날짜를 보여줘’라는
+      식의 명령을 내릴 수 있다. <br />자바스크립트를 이용하면 웹에 풍부한 효과를
+      넣을 수 있지만, <br />2000년대 초반만 해도 자바스크립트는 개발자들에게
+      무시당하는 언어였다. 별다른 기능도 없고,<br />
+      성능도 별로 좋지 않았기 때문이다.<br />
+      하지만 최근 몇 년 사이에 다양한 자바스크립트 프레임워크와 라이브러리가<br />
+      생기면서 자바스크립트 생태계는 크게 확장되고 있으며, 그 위상도 점점
+      높아지고 있다. <br />[네이버 지식백과] 자바스크립트 [Javascript] - 웹을
+      풍부하게 만들어주는 작고 가벼운 언어 <br />(용어로 보는 IT, 이지현)
+      <br /><br />
+    </div>
+    <div id="last">
+      <a href="#list">맨위로</a>
+      <a href="#list">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+        />
+      </a>
+    </div>
+  </body>
+</html>
