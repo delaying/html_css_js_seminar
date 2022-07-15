@@ -1,0 +1,107 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Icons</title>
+    <link rel="stylesheet" href="./social-media-icons.css" />
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background: #d7d7d7;
+      }
+
+      .social-menu ul {
+        position: absolute;
+        /* absolute는 속성이 부여된 부모를 기준으로 위치설정 */
+        top: 50%;
+        left: 50%;
+        padding: 0;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        /* 앞에는 x축방향이동, 뒤는 y축 방향이동 */
+        display: flex;
+      }
+
+      .social-menu ul li {
+        list-style: none;
+        margin: 0 15px;
+      }
+
+      .social-menu ul li .fab {
+        font-size: 30px;
+        line-height: 60px;
+        transition: 0.3s;
+        /* 실행시간지정 , 
+        기본값이 0으로 되어있으므로 설정하지 않으면 재생되지않음*/
+        color: #000;
+      }
+
+      .social-menu ul li .fab:hover {
+        color: #fff;
+      }
+
+      .social-menu ul li a {
+        position: relative;
+        /* 일반적인 순서에 따라 요소표시 */
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #fff;
+        text-align: center;
+        transition: 0.6s;
+        box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+        /* 수평거리,수직거리,흐림정도,색상 */
+      }
+
+      .social-menu ul li a:hover {
+        transform: translate(0, -10%);
+      }
+
+      .social-menu ul li:nth-child(1) a:hover {
+        background-color: rgba(0, 0, 0, 0.829);
+      }
+      .social-menu ul li:nth-child(2) a:hover {
+        background-color: #e4405f;
+      }
+      .social-menu ul li:nth-child(3) a:hover {
+        background-color: #0077b5;
+      }
+      .social-menu ul li:nth-child(4) a:hover {
+        background-color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="social-menu">
+      <ul>
+        <li>
+          <!-- fontawesome 사용방법 알려주기 -->
+          <!-- blank는 새로운 탭으로 페이지가 열리는 것. -->
+          <a href="https://github.com/" target="blank">
+            <i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" target="blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://codepen.io/">
+            <i class="fab fa-codepen" target="blank"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

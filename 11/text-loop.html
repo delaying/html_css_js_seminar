@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #282828;
+      }
+      .container {
+        display: flex;
+        white-space: nowrap;
+        /* white-space는 공백과 줄바꿈을 지정함 */
+        /* nowrap 은 공백을 채우지만, 가로로 긴줄에선 줄바꿈하지않음 */
+      }
+
+      .list {
+        display: flex;
+        font-size: 5vw;
+        /* v는 뷰포트를 기준으로 한다는 뜻, */
+        /* vw(width)와 vh(height)가 있음 */
+        /* 보여지는 영역에서 얼마만큼 차지할 것인지 지정하는 단위 */
+        /* 1vw = 뷰포트 너비의 1% */
+        animation: loop 20s infinite linear;
+      }
+
+      .item {
+        color: #00ffb6;
+      }
+
+      @keyframes loop {
+        100% {
+          transform: translateX(-100%);
+          /* 20초 내에 -가 붙으므로 화면의 왼쪽으로 이동해야함 */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="list">
+        <div class="item">To infinity and beyond<span>&nbsp;</span></div>
+        <div class="item">To infinity and beyond<span>&nbsp;</span></div>
+        <div class="item">To infinity and beyond<span>&nbsp;</span></div>
+        <div class="item">To infinity and beyond<span>&nbsp;</span></div>
+      </div>
+      <div class="list">
+        <div class="item">To infinity and beyond<span>&nbsp;</span></div>
+        <div class="item">To infinity and beyond<span>&nbsp;</span></div>
+        <div class="item">To infinity and beyond<span>&nbsp;</span></div>
+        <div class="item">To infinity and beyond<span>&nbsp;</span></div>
+      </div>
+    </div>
+  </body>
+</html>

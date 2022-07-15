@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --main-bg-color: black;
+        --text-color: yellow;
+        --font-size-small: 2vw;
+        --font-size-large: 10vw;
+      }
+      body {
+        background-color: var(--main-bg-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .waviy {
+        position: relative;
+        -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+      }
+      .waviy span {
+        position: relative;
+        display: inline-block;
+        font-size: var(--font-size-large);
+        color: var(--text-color);
+        text-transform: uppercase;
+        animation: wave 1s infinite;
+        animation-delay: calc(0.1s * var(--i));
+      }
+      @keyframes wave {
+        0%,
+        40%,
+        100% {
+          transform: translateY(0);
+        }
+        20% {
+          transform: translateY(-20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="waviy">
+      <span style="--i: 1">L</span>
+      <span style="--i: 2">o</span>
+      <span style="--i: 3">a</span>
+      <span style="--i: 4">d</span>
+      <span style="--i: 5">i</span>
+      <span style="--i: 6">n</span>
+      <span style="--i: 7">g</span>
+      <span style="--i: 8">.</span>
+      <span style="--i: 9">.</span>
+      <span style="--i: 10">.</span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes ball {
+        0% {
+          /* from으로 바꿔도됨 */
+          top: 0px;
+        }
+        95% {
+          width: 100px;
+          /* background-color: red; */
+        }
+        to {
+          top: 300px;
+          width: 115px;
+          height: 90px;
+        }
+      }
+
+      div {
+        /* relative는 일반적인 순서에따라 요소표시하지만, */
+        /* top,left같은 속성을 자기자신을 기준으로 적용함. */
+        position: relative;
+        left: 100px;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #000;
+        animation: ball 1s ease-in Infinite Alternate;
+        /* 1초동안 재생, ease-in은 느리게시작, 무한반복, */
+        /* alternate는 홀수번째는 from->to방향 짝수는to->from방향 */
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
