@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>do-while 문으로 0에서 n까지의 합</h1>
+
+    <script>
+      var n = prompt("0보다 큰 정수를 입력하세요", 1);
+      n = parseInt(n); //문자열을 숫자로 바꿈
+
+      var i = 0,
+        sum = 0;
+
+      do {
+        sum += i;
+        i++;
+      } while (i <= n); //i가 0~n까지 반복
+      document.write("0에서" + n + "까지 합은" + sum);
+      //   document.write(`0에서${n}까지 합은 ${sum}`);
+    </script>
+  </body>
+</html>
