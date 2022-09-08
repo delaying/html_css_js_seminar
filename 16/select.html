@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function drawImage() {
+        let sel = document.getElementById("fruits");
+        let img = document.getElementById("fruitimage");
+        // console.log(sel.options);
+        // console.log(sel.options.selectedIndex);
+        // console.log(sel.options[sel.selectedIndex]);
+        img.src = sel.options[sel.selectedIndex].value;
+      }
+    </script>
+    <style>
+      img {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>select 객체에서 선택한 과일 출력</h3>
+    <hr />
+    <p>과일을 선택하면 이미지가 출력됩니다.</p>
+    <form>
+      <select id="fruits" onchange="drawImage()">
+        <option
+          value="https://m.nongmin.com/upload/bbs/202202/20220213000003506/20220213000003506.jpg"
+        >
+          딸기
+        </option>
+        <option
+          value="https://health.chosun.com/site/data/img_dir/2022/05/04/2022050401754_0.jpg"
+        >
+          바나나
+        </option>
+        <option
+          value="https://img.freepik.com/premium-photo/red-apples-isolated-on-white-background_299651-65.jpg?w=2000"
+          selected
+        >
+          사과
+        </option>
+      </select>
+      <img id="fruitimage" src="" alt="" />
+    </form>
+  </body>
+</html>

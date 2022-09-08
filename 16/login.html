@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div id="login">
+      <form onsubmit="change()">
+        <input type="email" id="input" placeholder="이메일" />
+        <br />
+        <input type="password" id="passwd" placeholder="비밀번호" />
+
+        <div id="error"></div>
+        <input type="submit" id="btn" placeholder="로그인" />
+      </form>
+    </div>
+
+    <script>
+      function change() {
+        const form = document.getElementById("login");
+        //console.log로 미리찍어보기
+        const id = document.getElementById("input").value;
+
+        // console.log(JSON.stringify(id));
+        let name = JSON.stringify(id).split("@")[0];
+
+        form.classList.add("remove");
+
+        // name = name.replace('"', "");
+        document.write(`${name}님이 로그인 하였습니다.`);
+      }
+    </script>
+  </body>
+</html>

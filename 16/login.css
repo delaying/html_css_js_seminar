@@ -1,0 +1,40 @@
+:root {
+  --color-yellow: #fff7d6;
+  --color-light: #00c6af;
+  --color-dark: #2f4858;
+}
+
+body {
+  background-color: var(--color-dark);
+}
+
+#login {
+  margin: auto;
+  width: 300px;
+  background-color: var(--color-yellow);
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+}
+
+#btn {
+  margin-top: 30px;
+  background-color: var(--color-light);
+}
+
+#error {
+  color: red;
+}
+
+.remove {
+  display: none;
+}
